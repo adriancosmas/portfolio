@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.RichText_richtext__cLLOc{
+    @apply !max-w-full !m-0
+}
+
+.RichText_richtext__cLLOc pre{
+    @apply whitespace-pre-wrap bg-gray-50 p-4 rounded-xl
+}

@@ -1,0 +1,26 @@
+{
+  "id": "time",
+  "type": "SharedSlice",
+  "name": "Time",
+  "description": "Time",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "time": {
+          "type": "Timestamp",
+          "config": {
+            "label": "time",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

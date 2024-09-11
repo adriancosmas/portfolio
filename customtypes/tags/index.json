@@ -1,0 +1,26 @@
+{
+  "format": "custom",
+  "id": "tags",
+  "label": "Javascript",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "name": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Name",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      }
+    }
+  }
+}

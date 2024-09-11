@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"time": {
+				"__TYPE__": "FieldContent",
+				"type": "Timestamp",
+				"value": "2014-09-17T07:51:27Z"
+			}
+		},
+		"items": []
+	}
+]
