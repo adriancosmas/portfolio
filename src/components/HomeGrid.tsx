@@ -119,8 +119,8 @@ latest industry trends and best practices to deliver high-quality, responsive we
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#dff2ff] rounded-3xl p-6`}>
                 <Link href="https://linkedin.com/in/adriancosmas">
                     <div className="flex flex-col justify-between h-full">
-                    <FontAwesomeIcon className='w-20 text-[#0077B5] h-20' icon={faLinkedin} />
-                    <p className="font-light text-gray-800 text-3xl">Connect with me!</p>
+                        <FontAwesomeIcon className='w-20 text-[#0077B5] h-20' icon={faLinkedin} />
+                        <p className="font-light text-gray-800 lg:text-3xl text-lg">Connect with me!</p>
                     </div>
                 </Link>
             </div>
@@ -133,7 +133,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
                             {indents}
                         </div>
 
-                        <p className="font-light text-white text-3xl">It's empty 😱</p>
+                        <p className="font-light text-white lg:text-3xl text-lg">It's empty 😱</p>
                     </div>
                 </Link>
             </div>
@@ -141,7 +141,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl p-6`}>
                 <div className="flex flex-col justify-between h-full">
                     <iframe src="https://open.spotify.com/embed/track/6WyOlDr4ntWyXZZ0hfH5Ts?utm_source=generator" width="100%" height="232px" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    <p className="font-light text-white text-3xl">My favorite song🔥</p>
+                    <p className="font-light text-white lg:text-3xl text-lg">My favorite song🔥</p>
                 </div>
             </div>
 
