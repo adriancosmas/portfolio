@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from "react"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faBehance, faDribbble, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
@@ -146,7 +146,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
 
             <div className={ `transition-opacity duration-1000 lg:col-span-2 ${loading ? 'animate-fade-in-up' : 'opacity-0'} overflow-hidden relative bg-white rounded-3xl cursor-default p-6`} >
 
-                <div className="flex flex-row gap-4 flex-wrap">
+                <div className="flex gap-4 flex-wrap">
                     {skill.map((o, index) => (
                         <div
                             key={index}
@@ -159,10 +159,29 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
 
             <div className="grid grid-cols-2 grid-rows-2 gap-8">
-                <div className="bg-red-500 h-full w-full rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer">1</div>
-                <div className="bg-red-500 h-full w-full rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer">1</div>
-                <div className="bg-red-500 h-full w-full rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer">1</div>
-                <div className="bg-red-500 h-full w-full rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer">1</div>
+                <Link href="https://behance.net/shibuyameto">
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#053eff] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faBehance} />
+                    </div>
+                </Link>
+
+                <Link href="https://dribbble.com/shibuyameto">
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#ea4c89] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faDribbble} />
+                    </div>
+                </Link>
+
+                <Link href="https://instagram.com/shibuyameto">
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#515BD4] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faInstagram} />
+                    </div>
+                </Link>
+
+                <Link href="https://youtube.com/@jansentriad">
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#FF0000] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faYoutube} />
+                    </div>
+                </Link>
             </div>
 
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl p-6`}>
