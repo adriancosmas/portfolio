@@ -70,7 +70,7 @@ export default async function Index() {
             <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Tiket Kapal feature on BCA Mobile</p>
             <Image 
               priority
-              src="/img/kapal.png" 
+              src="/img/kapal.PNG" 
               alt="Tiket Kapal BCA Mobile Lifestyle"
               fill
               style={{ objectFit:'cover' }}
