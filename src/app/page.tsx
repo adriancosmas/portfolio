@@ -71,7 +71,7 @@ export default async function Index() {
             <Image 
               priority
               src="/img/kapal.png" 
-              alt="Everyday is another battle"
+              alt="Tiket Kapal BCA Mobile Lifestyle"
               fill
               style={{ objectFit:'cover' }}
               sizes="(max-width: 768px) 100vw, 
