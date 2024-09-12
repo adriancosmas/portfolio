@@ -6,11 +6,17 @@ import * as prismic from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PostCard } from "@/components/PostCard";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import HomeGrid from "@/components/HomeGrid";
 import Image from "next/image";
+import type { Viewport } from 'next'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 // This component renders your homepage.
 //
@@ -23,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const home = await client.getByUID("page", "home");
 
   return {
-    title: prismic.asText(home.data.title),
+    title: "Cosmas Adrian - Frontend Developer & Graphic Designer",
     description: home.data.meta_description,
     openGraph: {
       title: home.data.meta_title ?? undefined,
@@ -61,7 +67,7 @@ export default async function Index() {
 
       <div className="flex lg:flex-row flex-col mt-8 gap-8 h-[1000px] lg:h-full md:h-full">
           <div className="relative flex-1 h-[500px] cursor-pointer hover:flex-[3] bg-red-500 transition-all ease-in-out delay-400 rounded-3xl p-4 overflow-hidden">
-            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl">Tiket Kapal feature on BCA Mobile</p>
+            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Tiket Kapal feature on BCA Mobile</p>
             <Image 
               priority
               src="/img/kapal.png" 
@@ -75,7 +81,7 @@ export default async function Index() {
           </div>
 
           <div className="relative flex-1 h-[500px] cursor-pointer hover:flex-[3] bg-red-500 transition-all ease-in-out delay-400 rounded-3xl p-4 overflow-hidden">
-            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl">Wisata Indonesia feature on BCA Mobile</p>
+            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Wisata Indonesia feature on BCA Mobile</p>
 
             <Image 
               priority
@@ -122,7 +128,7 @@ export default async function Index() {
       </div>
 
       <div className="mt-8 rounded-3xl bg-white px-6 py-10">
-        <p className="text-center text-3xl font-light text-gray-800">I love minimalist, clean, and simple concept. <br/> This is why my website like this, but i do made with love ♥️</p>
+        <p className="text-center text-xl lg:text-3xl font-light text-gray-800">I love minimalist, clean, and simple concept. <br/> This is why my website like this, but i do made with love ♥️</p>
       </div>
     </>
   );

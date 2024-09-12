@@ -87,8 +87,8 @@ export default async function Page({ params }: { params: Params }) {
       </>
 
       <div>
-        { page?.tags.map((o) => (
-          <Link href={`/tags/${o}`}>{o}</Link>
+        { page?.tags.map((o,index) => (
+          <Link key={index} href={`/tags/${o}`}>{o}</Link>
         ))
         }
       </div>
