@@ -74,8 +74,8 @@ export default function HomeGrid(){
                 <h1 className="font-semibold text-gray-800 text-4xl lg:text-6xl text-center">Frontend Developer & Graphic Designer based in Indonesia</h1>   
 
                 <div className="flex flex-row gap-8 mt-8">
-                    <button className=" bg-[#FFDC7F] px-6 py-2 rounded-md hover:bg-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all">Contact</button>
-                    <Link href="https://read.cv/adriancosmas" className="border border-[#FFDC7F] px-6 py-2 rounded-md hover:border-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all">Read CV</Link>
+                    <Link href="mailto:tancosmas@gmail.com" className=" bg-[#FFDC7F] px-6 py-2 rounded-md hover:bg-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all">Contact</Link>
+                    <Link href="https://read.cv/adriancosmas" target="_blank" className="border border-[#FFDC7F] px-6 py-2 rounded-md hover:border-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all">Read CV</Link>
                 </div>
             </div>
         </div>
@@ -102,6 +102,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
         </div>
 
+        {/* SECTION 2 */}
         <div className="grid gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             <div className={ `transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-white rounded-3xl cursor-default`} >
                 <div className="flex h-full w-full flex-col">
@@ -145,7 +146,6 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
 
             <div className={ `transition-opacity duration-1000 lg:col-span-2 ${loading ? 'animate-fade-in-up' : 'opacity-0'} overflow-hidden relative bg-white rounded-3xl cursor-default p-6`} >
-
                 <div className="flex gap-4 flex-wrap">
                     {skill.map((o, index) => (
                         <div
@@ -159,25 +159,25 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
 
             <div className="grid grid-cols-2 grid-rows-2 gap-8">
-                <Link href="https://behance.net/shibuyameto">
+                <Link href="https://behance.net/shibuyameto" target="_blank">
                     <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#053eff] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
                         <FontAwesomeIcon className='w-20 text-white h-20' icon={faBehance} />
                     </div>
                 </Link>
 
-                <Link href="https://dribbble.com/shibuyameto">
+                <Link href="https://dribbble.com/shibuyameto" target="_blank">
                     <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#ea4c89] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
                         <FontAwesomeIcon className='w-20 text-white h-20' icon={faDribbble} />
                     </div>
                 </Link>
 
-                <Link href="https://instagram.com/shibuyameto">
+                <Link href="https://instagram.com/shibuyameto" target="_blank">
                     <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#515BD4] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
                         <FontAwesomeIcon className='w-20 text-white h-20' icon={faInstagram} />
                     </div>
                 </Link>
 
-                <Link href="https://youtube.com/@jansentriad">
+                <Link href="https://youtube.com/@jansentriad" target="_blank">
                     <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#FF0000] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
                         <FontAwesomeIcon className='w-20 text-white h-20' icon={faYoutube} />
                     </div>
@@ -196,6 +196,13 @@ latest industry trends and best practices to deliver high-quality, responsive we
                         (max-width: 1200px) 50vw, 
                         33vw"
                     />
+                </div>
+            </div>
+
+            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-visible relative rounded-3xl`}>
+                <div className="flex flex-col h-full gap-8">
+                    <div className=" bg-red-500 flex-1 rounded-3xl p-6 transition-all delay-150 hover:rotate-6 cursor-pointer">1</div>
+                    <div className=" bg-blue-500 flex-1 rounded-3xl p-6 transition-all delay-150 hover:-rotate-6 cursor-pointer">1</div>
                 </div>
             </div>
         </div>
