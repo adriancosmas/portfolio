@@ -68,7 +68,7 @@ export default function HomeGrid(){
 
     return(
     <>
-        <div className={`${loading ? 'animate-zoom-out' : 'opacity-0'} w-full rounded-3xl bg-white mb-8 lg:h-[calc(100vh-50px)] h-[calc(100vh-150px)] overflow-hidden p-6`}>
+        <div className={`${loading ? 'animate-zoom-out' : 'opacity-0'} w-full rounded-3xl bg-white mb-8 lg:h-[calc(100vh-50px)] h-[calc(100vh-100px)] overflow-hidden p-6`}>
             <div className="max-w-[768px] flex justify-center items-center flex-col h-full mx-auto">
                 <p className="mb-4 font-light">Hello! Cosmas here.</p>
                 <h1 className="font-semibold text-gray-800 text-4xl lg:text-6xl text-center">Frontend Developer & Graphic Designer based in Indonesia</h1>   
