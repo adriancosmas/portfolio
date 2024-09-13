@@ -125,8 +125,8 @@ latest industry trends and best practices to deliver high-quality, responsive we
                 </Link>
             </div>
 
-            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#24292e] rounded-3xl p-6`}>
-                <Link className="flex flex-col justify-between flex-wrap h-full" href="https://github.com/adriancosmas">
+            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#24292e] rounded-3xl`}>
+                <Link className="flex flex-col justify-between flex-wrap h-full p-6" href="https://github.com/adriancosmas">
                     {/* <div className="flex-1"> */}
                         <FontAwesomeIcon className='w-20 text-white h-20' icon={faGithub} />
 
@@ -134,7 +134,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
                             {indents}
                         </div>
 
-                        <p className="font-light text-white text-3xl">It's empty 😱</p>
+                        <p className="font-light text-white text-3xl mt-auto">It's empty 😱</p>
                     {/* </div> */}
                 </Link>
             </div>
