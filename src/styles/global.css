@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "oakSans";
+    /* src: url("../public/font/Gantari[wght].ttf"); */
+    src: url("../../public/font/OakSansVF.ttf");
+}
+
 @font-face {
     font-family: "Gantari";
-    /* src: url("../public/font/Gantari[wght].ttf"); */
     src: url("../../public/font/Gantari[wght].ttf");
-  }
+}
 
 .RichText_richtext__cLLOc{
     @apply !max-w-full !m-0

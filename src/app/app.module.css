@@ -15,7 +15,7 @@
 }
 
 .project__content__title{
-    @apply my-4 text-xl font-semibold text-gray-800 xl:text-2xl font-gantari
+    @apply my-4 text-xl font-semibold text-gray-800 xl:text-2xl font-oak
 }
 
 /* .blog__container{
@@ -39,11 +39,11 @@
 }
 
 .blog__content__title{
-    @apply lg:text-6xl text-4xl text-gray-800 font-semibold xl:text-8xl font-gantari
+    @apply lg:text-6xl text-4xl text-gray-800 font-semibold xl:text-8xl font-oak
 }
 
 .blog__content__subtitle{
-    @apply lg:text-3xl text-xl text-gray-600 font-light mt-6 xl:text-6xl xl:mt-10 font-gantari
+    @apply lg:text-3xl text-xl text-gray-600 font-light mt-6 xl:text-6xl xl:mt-10 font-oak
 }
 
 .blog__section{
@@ -55,7 +55,7 @@
 }
 
 .footer__container:hover .footer__content__heart{
-    @apply text-red-500 xl:text-6xl font-gantari
+    @apply text-red-500 xl:text-6xl font-oak
 }
 
 .footer__content__heart{
@@ -63,7 +63,7 @@
 }
 
 .footer__content{
-    @apply text-center text-xl lg:text-3xl font-light text-gray-800 xl:text-5xl xl:leading-snug font-gantari
+    @apply text-center text-xl lg:text-3xl font-light text-gray-800 xl:text-5xl xl:leading-snug font-oak
 }
 
 /* .footer__content__heart{

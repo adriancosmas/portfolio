@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         gantari: ["Gantari", "sans-serif"],
+        oak: ["OakSans", "sans-serif"],
       },
       animation: {
         'fade-in-up': 'fadeInUp .3s ease-out',

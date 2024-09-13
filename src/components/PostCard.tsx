@@ -16,15 +16,15 @@ export const PostCard = ({
 
   return (
     <PrismicLink document={post}>
-      <div className="flex flex-col gap-2 rounded-xl p-6 bg-white flex-1 font-gantari">
+      <div className="flex flex-col gap-2 rounded-xl p-6 bg-white flex-1 font-oak">
         <div className="flex flex-col gap-1">
 
-          <p className="text-sm text-slate-700 w-min pb-1 font-gantari">
+          <p className="text-sm text-slate-700 w-min pb-1 font-oak">
             {new Date(data?.date || "").toLocaleDateString()}
           </p>
 
           <div className="hover:opacity-75 duration-300 ease-in-out transition-all">
-            <h2 className="font-bold text-xl font-gantari">
+            <h2 className="font-bold text-xl font-oak">
               <PrismicText field={data.title} />
             </h2>
           </div>
