@@ -85,7 +85,7 @@ export default async function Index() {
 
             <Image 
               priority
-              src="/img/wisata.png" 
+              src="/img/wisata.PNG" 
               alt="Wisata Indonesia BCA Mobile Lifestyle"
               fill
               style={{ objectFit:'cover' }}
@@ -100,7 +100,7 @@ export default async function Index() {
 
             <Image 
               priority
-              src="/img/sukha.png" 
+              src="/img/sukha.PNG" 
               alt="Pelni feature on Mandiri Livin' Sukha"
               fill
               style={{ objectFit:'cover' }}

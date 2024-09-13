@@ -128,7 +128,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#24292e] rounded-3xl p-6`}>
                 <Link href="https://github.com/adriancosmas">
                     <div className="flex flex-col justify-between h-full">
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faGithub} />
+                        <FontAwesomeIcon className='lg:w-20 text-white lg:h-20 h-8 w-8' icon={faGithub} />
                         <div className="flex flex-row flex-wrap gap-2 justify-center">
                             {indents}
                         </div>
