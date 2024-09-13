@@ -116,33 +116,29 @@ latest industry trends and best practices to deliver high-quality, responsive we
                 </div>
             </div>
 
-            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#dff2ff] rounded-3xl p-6`}>
-                <Link href="https://linkedin.com/in/adriancosmas">
-                    <div className="flex flex-col justify-between flex-wrap h-full">
-                        <FontAwesomeIcon className='w-20 text-[#0077B5] h-20' icon={faLinkedin} />
-                        <p className="font-light text-gray-800 text-3xl">Connect with me!</p>
-                    </div>
+            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#dff2ff] rounded-3xl`}>
+                <Link className="flex flex-col justify-between flex-wrap h-full p-6" href="https://linkedin.com/in/adriancosmas">
+                    <FontAwesomeIcon className='w-20 text-[#0077B5] h-20' icon={faLinkedin} />
+                    <p className="font-light text-gray-800 text-3xl mt-auto">Connect with me!</p>
                 </Link>
             </div>
 
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[#24292e] rounded-3xl`}>
                 <Link className="flex flex-col justify-between flex-wrap h-full p-6" href="https://github.com/adriancosmas">
-                    {/* <div className="flex-1"> */}
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faGithub} />
+                    <FontAwesomeIcon className='w-20 text-white h-20' icon={faGithub} />
 
-                        <div className="flex flex-row flex-wrap gap-2 justify-center">
-                            {indents}
-                        </div>
+                    <div className="flex flex-row flex-wrap gap-2 justify-center mt-auto">
+                        {indents}
+                    </div>
 
-                        <p className="font-light text-white text-3xl mt-auto">It's empty 😱</p>
-                    {/* </div> */}
+                    <p className="font-light text-white text-3xl mt-auto">It's empty 😱</p>
                 </Link>
             </div>
 
-            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl p-6`}>
-                <div className="flex flex-col justify-between h-full">
+            <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl`}>
+                <div className="flex flex-col justify-between h-full p-6">
                     <iframe src="https://open.spotify.com/embed/track/6WyOlDr4ntWyXZZ0hfH5Ts?utm_source=generator" width="100%" height="232px" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    <p className="font-light text-white text-3xl">My favorite song🔥</p>
+                    <p className="font-light text-white text-3xl mt-auto">My favorite song🔥</p>
                 </div>
             </div>
 
