@@ -1,0 +1,131 @@
+.hero{
+    @apply w-full rounded-3xl bg-white mb-8 lg:h-[calc(100vh-50px)] h-[calc(100vh-50px)] overflow-hidden p-6
+}
+
+.hero__container{
+    @apply max-w-[768px] flex justify-center items-center flex-col h-full mx-auto
+}
+
+.hero__subtitle{
+    @apply mb-4 font-light
+}
+
+.hero__title{
+    @apply font-semibold text-gray-800 text-4xl lg:text-6xl text-center
+}
+
+.hero__buttonContainer{
+    @apply flex flex-row gap-8 mt-8
+}
+
+.btnPrimary{
+    @apply bg-[#FFDC7F] px-6 py-2 rounded-md hover:bg-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all
+}
+
+.btnSecondary{
+    @apply border border-[#FFDC7F] px-6 py-2 rounded-md hover:border-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all
+}
+
+.gridContainer{
+    @apply grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-8
+}
+
+.gridContainer__2{
+    @apply grid gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3
+}
+
+.gridItem__2xl{
+    @apply overflow-hidden relative bg-[#FFDC7F] h-full rounded-3xl p-6 lg:col-span-2 transition-opacity duration-1000
+}
+
+.gridItem{
+    @apply transition-opacity duration-1000 overflow-hidden relative bg-white h-full aspect-square rounded-3xl p-6 flex items-center justify-center flex-col
+}
+
+.about__title{
+    @apply text-4xl font-semibold text-gray-800 mb-6
+}
+
+.about__description{
+    @apply font-light text-gray-600 lg:text-2xl text-lg
+}
+
+.quote{
+    @apply text-3xl font-semibold text-center
+}
+
+.quotePerson{
+    @apply text-lg font-light text-center mt-10
+}
+
+.calendarContainer{
+    @apply aspect-square overflow-hidden relative bg-white rounded-3xl cursor-default transition-opacity duration-1000
+}
+
+.calendarContent{
+    @apply flex h-full w-full flex-col
+}
+
+.calendarHeader{
+    @apply w-full flex-[0.3] bg-red-500 flex items-center justify-center
+}
+
+.calendarHeader__title{
+    @apply text-white text-center font-semibold text-5xl cursor-default
+}
+
+.calendarDateContainer{
+    @apply flex flex-col justify-center items-center flex-1
+}
+
+.calendarDate__title{
+    @apply text-center font-semibold text-gray-800 text-[150px]
+}
+
+.gridItem__3{
+    @apply aspect-square overflow-hidden relative bg-[#dff2ff] rounded-3xl transition-opacity duration-1000
+}
+
+.linkedin__container{
+    @apply group flex flex-col justify-between flex-wrap h-full p-6
+}
+
+.linkedin__icon{
+    @apply w-20 text-[#0077B5] h-20
+}
+
+.linkedin__text{
+    @apply font-light text-gray-800 text-3xl mt-auto transition-all delay-150 scale-100 group-hover:text-4xl ease-in-out
+}
+
+.gridItem__4{
+    @apply aspect-square overflow-hidden relative bg-[#24292e] rounded-3xl transition-opacity duration-1000
+}
+
+.github__container{
+    @apply flex flex-col justify-between flex-wrap h-full p-6
+}
+
+.github__icon{
+    @apply w-20 text-white h-20
+}
+
+.github__commit{
+    @apply flex flex-row flex-wrap gap-2 justify-center mt-auto
+}
+
+.github__text{
+    @apply font-light text-white text-3xl mt-auto"
+}
+
+.gridItem__5{
+    @apply aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl transition-opacity duration-1000
+}
+
+.spotify__container{
+    @apply flex flex-col justify-between h-full p-6
+}
+
+.spotify__text{
+    @apply font-light text-white text-3xl mt-auto
+}

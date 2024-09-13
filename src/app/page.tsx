@@ -10,6 +10,8 @@ import Link from "next/link";
 import HomeGrid from "@/components/HomeGrid";
 import Image from "next/image";
 import type { Viewport } from 'next'
+import styles from './app.module.css'
+import App from "next/app";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -59,67 +61,85 @@ export default async function Index() {
     <>
       <HomeGrid/>
 
-        {/* <section className="flex flex-col gap-8 w-full">
-            {posts.map((post) => (
-              <PostCard key={post.id} post={post} />
-            ))}
-        </section> */}
-
-      <div className="flex lg:flex-row flex-col mt-8 gap-8 h-[1000px] lg:h-full md:h-full">
-          <div className="relative flex-1 h-[500px] cursor-pointer hover:flex-[3] bg-red-500 transition-all ease-in-out delay-400 rounded-3xl p-4 overflow-hidden">
-            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Tiket Kapal feature on BCA Mobile</p>
-            <Image 
-              priority
-              src="/img/kapal.PNG" 
-              alt="Tiket Kapal BCA Mobile Lifestyle"
-              fill
-              style={{ objectFit:'cover' }}
-              sizes="(max-width: 768px) 100vw, 
-              (max-width: 1200px) 50vw, 
-              33vw"
+      <div className={ styles.project__container }>
+          <div className={ styles.project__content }>
+            <div className={ styles.project__content__imageContainer }>
+              <Image 
+                className={ styles.project__content__image }
+                priority
+                src="/img/kapal.PNG" 
+                alt="Tiket Kapal BCA Mobile Lifestyle"
+                fill
+                style={{ objectFit:'cover' }}
+                sizes="(max-width: 768px) 100vw, 
+                (max-width: 1200px) 50vw, 
+                33vw"
               />
+            </div>
+
+            <p className={ styles.project__content__title }>
+              Tiket Kapal feature on BCA Mobile
+            </p>
           </div>
 
-          <div className="relative flex-1 h-[500px] cursor-pointer hover:flex-[3] bg-red-500 transition-all ease-in-out delay-400 rounded-3xl p-4 overflow-hidden">
-            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Wisata Indonesia feature on BCA Mobile</p>
-
-            <Image 
-              priority
-              src="/img/wisata.PNG" 
-              alt="Wisata Indonesia BCA Mobile Lifestyle"
-              fill
-              style={{ objectFit:'cover' }}
-              sizes="(max-width: 768px) 100vw, 
-              (max-width: 1200px) 50vw, 
-              33vw"
+          <div className={ styles.project__content }>
+            <div className={ styles.project__content__imageContainer }>
+              <Image 
+                className={ styles.project__content__image }
+                priority
+                src="/img/wisata.PNG" 
+                alt="Wisata Indonesia BCA Mobile Lifestyle"
+                fill
+                style={{ objectFit:'cover' }}
+                sizes="(max-width: 768px) 100vw, 
+                (max-width: 1200px) 50vw, 
+                33vw"
               />
+            </div>
+
+            <p className={ styles.project__content__title }>
+              Wisata Indonesia feature on BCA Mobile
+            </p>
           </div>
 
-          <div className="relative flex-1 h-[500px] cursor-pointer hover:flex-[3] bg-red-500 transition-all ease-in-out delay-400 rounded-3xl p-4 overflow-hidden">
-            <p className="z-[2] absolute bottom-8 bg-white p-4 rounded-xl shadow-md">Pelni feature on Mandiri Livin' Sukha</p>
-
-            <Image 
-              priority
-              src="/img/sukha.PNG" 
-              alt="Pelni feature on Mandiri Livin' Sukha"
-              fill
-              style={{ objectFit:'cover' }}
-              sizes="(max-width: 768px) 100vw, 
-              (max-width: 1200px) 50vw, 
-              33vw"
+          <div className={ styles.project__content }>
+            <div className={ styles.project__content__imageContainer }>
+              <Image 
+                className={ styles.project__content__image }
+                priority
+                src="/img/sukha.PNG" 
+                alt="Pelni feature on Mandiri Livin' Sukha"
+                fill
+                style={{ objectFit:'cover' }}
+                sizes="(max-width: 768px) 100vw, 
+                (max-width: 1200px) 50vw, 
+                33vw"
               />
+            </div>
+
+            <p className={ styles.project__content__title }>
+              Pelni feature on Mandiri Livin' Sukha
+            </p>
           </div>
       </div>
 
       <div className="grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-8">
-          <div className="aspect-square bg-[#FFDC7F] rounded-3xl p-6 flex justify-center items-center">
-            <p className="text-6xl text-gray-800 font-semibold">
-              Blog
-            </p>
+          <div className={ styles.blog__content }>
+            <div className={ styles.blog__content__header }/>
+
+            <div className={ styles.blog__content__container }>
+              <p className={ styles.blog__content__title }>
+                Blog
+              </p>
+
+              <p className={ styles.blog__content__subtitle }>
+                Some content or my cheatsheet about programming
+              </p>
+            </div>
           </div>
 
-          <div className="aspect-square overflow-hidden flex">
-            <section className="flex flex-col gap-4 w-full overflow-y-scroll">
+          <div className={ styles.blog__content__flex }>
+            <section className={ styles.blog__section }>
                 {posts.map((post) => (
                   <PostCard key={post.id} post={post} />
                 ))}
@@ -127,8 +147,15 @@ export default async function Index() {
           </div>
       </div>
 
-      <div className="mt-8 rounded-3xl bg-white px-6 py-10">
-        <p className="text-center text-xl lg:text-3xl font-light text-gray-800">I love minimalist, clean, and simple concept. <br/> This is why my website like this, but i do made with love ♥️</p>
+      <div className={ styles.footer__container }>
+        <p className={ styles.footer__content }>
+          I love minimalist, clean, and simple concept. 
+          <br/> This is why my website like this, but i do made with love
+
+          <span className={ styles.footer__content__heart }>
+            ♥️
+          </span>
+        </p>
       </div>
     </>
   );

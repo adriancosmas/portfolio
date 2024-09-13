@@ -9,8 +9,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col bg-stone-100 w-full mx-auto overflow-x-hidden">
-        <div className="min-h-screen lg:px-12 lg:py-6 p-6 w-full flex flex-col text-slate-700">
+      <body className="main">
+        <div className="children">
           {children}
           <PrismicPreview repositoryName={repositoryName} />
         </div>

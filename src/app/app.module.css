@@ -1,0 +1,63 @@
+.project__container{
+    @apply flex lg:flex-row flex-col mt-8 gap-8 h-[1000px] lg:h-full md:h-full
+}
+
+.project__content{
+    @apply relative flex-1 h-[550px] cursor-pointer hover:flex-[3] transition-all ease-in-out delay-300 rounded-3xl overflow-hidden
+}
+
+.project__content__imageContainer{
+    @apply relative h-[calc(100%-80px)] rounded-3xl
+}
+
+.project__content__image{
+    @apply rounded-3xl
+}
+
+.project__content__title{
+    @apply my-4 text-xl font-semibold text-gray-800
+}
+
+/* .blog__container{
+    @apply grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-8
+} */
+
+.blog__content{
+    @apply aspect-square bg-white rounded-3xl overflow-hidden
+}
+
+.blog__content{
+    @apply aspect-square bg-white rounded-3xl overflow-hidden flex
+}
+
+.blog__content__header{
+    @apply bg-[#FFDC7F] lg:h-28 h-20 w-full
+}
+
+.blog__content__container{
+    @apply p-4
+}
+
+.blog__content__title{
+    @apply lg:text-6xl text-4xl text-gray-800 font-semibold
+}
+
+.blog__content__subtitle{
+    @apply lg:text-3xl text-xl text-gray-600 font-light mt-6
+}
+
+.blog__section{
+    @apply flex flex-col gap-4 w-full overflow-y-scroll
+}
+
+.footer__container{
+    @apply group mt-8 rounded-3xl bg-white px-6 py-10 cursor-default
+}
+
+.footer__content{
+    @apply text-center text-xl lg:text-3xl font-light text-gray-800
+}
+
+.footer__content__heart{
+    @apply group-hover:text-red-500 transition-all delay-100 ease-in-out
+}
