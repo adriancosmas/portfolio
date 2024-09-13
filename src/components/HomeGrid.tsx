@@ -42,7 +42,7 @@ export default function HomeGrid(){
     var indents = [];
 
     for (var i = 0; i < 33; i++) {
-        indents.push(<div className="w-5 h-5 xl:h-10 xl:w-10 rounded-md bg-gray-600 hover:bg-green-400 transition-all delay-75 ease-in-out"></div>);
+        indents.push(<div key={i+1} className="w-5 h-5 xl:h-10 xl:w-10 rounded-md bg-gray-600 hover:bg-green-400 transition-all delay-75 ease-in-out"></div>);
     }
 
     const item = width && width < 768 ? indents.splice(2,3) : indents
@@ -85,7 +85,7 @@ export default function HomeGrid(){
                         href="tancosmas@gmail.com" 
                         className={ styles.btnPrimary }
                     >
-                            Contact
+                         Contact
                     </Link>
 
                     <Link 
@@ -93,7 +93,7 @@ export default function HomeGrid(){
                         target="_blank" 
                         className={ styles.btnSecondary }
                     >
-                            Read CV
+                         Read CV
                     </Link>
                 </div>
             </div>
@@ -191,7 +191,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
                     {skill.map((o, index) => (
                         <div
                             key={index}
-                            className="bg-slate-100 px-4 py-2 rounded-full lg:text-2xl text-lg xl:text-6xl xl:px-8 xl:py-4 xl:leading-normal"
+                            className="bg-slate-100 px-4 py-2 rounded-full lg:text-2xl text-lg xl:text-6xl xl:px-8 xl:py-4 xl:leading-normal font-gantari"
                         >
                             { o }
                         </div>
@@ -226,24 +226,22 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
 
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-hidden relative bg-[rgb(149,110,86)] rounded-3xl p-6`}>
-                <div>
-                    <Image 
-                        priority
-                        src="/img/everyday.png" 
-                        alt="Everyday is another battle"
-                        fill
-                        style={{ objectFit:'cover' }}
-                        sizes="(max-width: 768px) 100vw, 
-                        (max-width: 1200px) 50vw, 
-                        33vw"
-                    />
-                </div>
+                <Image 
+                    priority
+                    src="/img/everyday.png" 
+                    alt="Everyday is another battle"
+                    fill
+                    style={{ objectFit:'cover' }}
+                    sizes="(max-width: 768px) 100vw, 
+                    (max-width: 1200px) 50vw, 
+                    33vw"
+                />
             </div>
 
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-visible relative rounded-3xl`}>
                 <div className="flex flex-col h-full gap-8">
-                    <div className=" bg-[#1c1917] flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:rotate-6 cursor-pointer font-mono text-green-400 text-center flex justify-center items-center text-3xl xl:text-7xl">{`> npm install`}</div>
-                    <Link href="https://www.fiverr.com/s/382XjDm" target="_blank" className=" bg-white flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:-rotate-6 cursor-pointer text-4xl xl:text-7xl text-center flex justify-center items-center hover:border-4 hover:border-[#FFDC7F]">Logo/Lettering Commission ↗</Link>
+                    <div className=" bg-gray-950 flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:rotate-6 cursor-pointer font-mono text-green-400 text-center flex justify-center items-center text-3xl xl:text-7xl">{`> npm install`}</div>
+                    <Link href="https://www.fiverr.com/s/382XjDm" target="_blank" className=" bg-white flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:-rotate-6 cursor-pointer text-4xl xl:text-7xl text-center flex justify-center items-center hover:border-4 hover:border-[#FFDC7F] font-gantari">Logo/Lettering Commission ↗</Link>
                 </div>
             </div>
         </div>

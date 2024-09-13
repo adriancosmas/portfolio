@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Gantari";
+    /* src: url("../public/font/Gantari[wght].ttf"); */
+    src: url("../../public/font/Gantari[wght].ttf");
+  }
+
 .RichText_richtext__cLLOc{
     @apply !max-w-full !m-0
 }

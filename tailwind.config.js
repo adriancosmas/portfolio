@@ -5,6 +5,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      fontFamily: {
+        gantari: ["Gantari", "sans-serif"],
+      },
       animation: {
         'fade-in-up': 'fadeInUp .3s ease-out',
         'zoom-out': 'zoomOut .3s ease-in-out'

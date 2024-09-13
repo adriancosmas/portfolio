@@ -150,7 +150,7 @@ export default async function Index() {
       <div className={ styles.footer__container }>
         <p className={ styles.footer__content }>
           I love minimalist, clean, and simple concept. 
-          <br/> This is why my website like this, but i do made with love
+          <br/>{`This is why my website like this, but i do made with love `}
 
           <span className={ styles.footer__content__heart }>
             ♥️
