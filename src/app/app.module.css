@@ -15,7 +15,7 @@
 }
 
 .project__content__title{
-    @apply my-4 text-xl font-semibold text-gray-800
+    @apply my-4 text-xl font-semibold text-gray-800 xl:text-2xl
 }
 
 /* .blog__container{
@@ -27,23 +27,23 @@
 }
 
 .blog__content{
-    @apply aspect-square bg-white rounded-3xl overflow-hidden flex
+    @apply aspect-square bg-white rounded-3xl overflow-hidden flex flex-col
 }
 
 .blog__content__header{
-    @apply bg-[#FFDC7F] lg:h-28 h-20 w-full
+    @apply bg-[#FFDC7F] lg:h-28 h-20 w-full xl:h-52
 }
 
 .blog__content__container{
-    @apply p-4
+    @apply p-4 xl:p-8
 }
 
 .blog__content__title{
-    @apply lg:text-6xl text-4xl text-gray-800 font-semibold
+    @apply lg:text-6xl text-4xl text-gray-800 font-semibold xl:text-8xl
 }
 
 .blog__content__subtitle{
-    @apply lg:text-3xl text-xl text-gray-600 font-light mt-6
+    @apply lg:text-3xl text-xl text-gray-600 font-light mt-6 xl:text-6xl xl:mt-10
 }
 
 .blog__section{
@@ -51,13 +51,21 @@
 }
 
 .footer__container{
-    @apply group mt-8 rounded-3xl bg-white px-6 py-10 cursor-default
+    @apply mt-8 rounded-3xl bg-white px-6 py-10 cursor-default
 }
 
-.footer__content{
-    @apply text-center text-xl lg:text-3xl font-light text-gray-800
+.footer__container:hover .footer__content__heart{
+    @apply text-red-500 xl:text-6xl
 }
 
 .footer__content__heart{
-    @apply group-hover:text-red-500 transition-all delay-100 ease-in-out
+    @apply transition-all delay-100 ease-in-out
 }
+
+.footer__content{
+    @apply text-center text-xl lg:text-3xl font-light text-gray-800 xl:text-4xl xl:leading-snug
+}
+
+/* .footer__content__heart{
+    @apply group-hover:text-red-500 transition-all delay-100 ease-in-out
+} */

@@ -3,59 +3,59 @@
 }
 
 .hero__container{
-    @apply max-w-[768px] flex justify-center items-center flex-col h-full mx-auto
+    @apply max-w-[768px] flex justify-center items-center flex-col h-full mx-auto xl:max-w-[85%]
 }
 
 .hero__subtitle{
-    @apply mb-4 font-light
+    @apply mb-4 font-light xl:text-3xl
 }
 
 .hero__title{
-    @apply font-semibold text-gray-800 text-4xl lg:text-6xl text-center
+    @apply font-semibold text-gray-800 text-4xl lg:text-6xl text-center xl:text-9xl
 }
 
 .hero__buttonContainer{
-    @apply flex flex-row gap-8 mt-8
+    @apply flex flex-row gap-8 mt-8 xl:mt-16
 }
 
 .btnPrimary{
-    @apply bg-[#FFDC7F] px-6 py-2 rounded-md hover:bg-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all
+    @apply bg-[#FFDC7F] px-6 py-2 rounded-md hover:bg-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all xl:px-12 xl:py-4 xl:text-2xl
 }
 
 .btnSecondary{
-    @apply border border-[#FFDC7F] px-6 py-2 rounded-md hover:border-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all
+    @apply border border-[#FFDC7F] px-6 py-2 rounded-md hover:border-gray-800 hover:text-[#FFDC7F] ease-in-out delay-100 transition-all xl:px-12 xl:py-4 xl:text-2xl
 }
 
 .gridContainer{
-    @apply grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-8
+    @apply grid grid-flow-row-dense grid-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-8
 }
 
 .gridContainer__2{
-    @apply grid gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3
+    @apply grid grid-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3
 }
 
 .gridItem__2xl{
-    @apply overflow-hidden relative bg-[#FFDC7F] h-full rounded-3xl p-6 lg:col-span-2 transition-opacity duration-1000
+    @apply overflow-hidden relative bg-[#FFDC7F] h-full rounded-3xl p-6 lg:col-span-2 transition-opacity duration-1000 xl:p-8
 }
 
 .gridItem{
-    @apply transition-opacity duration-1000 overflow-hidden relative bg-white h-full aspect-square rounded-3xl p-6 flex items-center justify-center flex-col
+    @apply transition-opacity duration-1000 overflow-hidden relative bg-white h-full aspect-square rounded-3xl p-6 flex items-center justify-center flex-col xl:p-8
 }
 
 .about__title{
-    @apply text-4xl font-semibold text-gray-800 mb-6
+    @apply text-6xl font-semibold text-gray-800 mb-6
 }
 
 .about__description{
-    @apply font-light text-gray-600 lg:text-2xl text-lg
+    @apply font-light text-gray-600 lg:text-2xl text-lg xl:text-5xl xl:leading-snug
 }
 
 .quote{
-    @apply text-3xl font-semibold text-center
+    @apply text-3xl font-semibold text-center xl:text-6xl
 }
 
 .quotePerson{
-    @apply text-lg font-light text-center mt-10
+    @apply text-lg font-light text-center mt-10 xl:text-3xl
 }
 
 .calendarContainer{
@@ -71,7 +71,7 @@
 }
 
 .calendarHeader__title{
-    @apply text-white text-center font-semibold text-5xl cursor-default
+    @apply text-white text-center font-semibold text-5xl cursor-default xl:text-8xl
 }
 
 .calendarDateContainer{
@@ -79,7 +79,7 @@
 }
 
 .calendarDate__title{
-    @apply text-center font-semibold text-gray-800 text-[150px]
+    @apply text-center font-semibold text-gray-800 text-[150px] xl:text-[177.42px]
 }
 
 .gridItem__3{
@@ -87,15 +87,19 @@
 }
 
 .linkedin__container{
-    @apply group flex flex-col justify-between flex-wrap h-full p-6
+    @apply flex flex-col justify-between flex-wrap h-full p-6 xl:p-10
 }
 
 .linkedin__icon{
-    @apply w-20 text-[#0077B5] h-20
+    @apply w-20 text-[#0077B5] h-20 xl:h-40 xl:w-40
+}
+
+.linkedin__container:hover .linkedin__text{
+    @apply font-light text-gray-800 mt-auto text-4xl xl:text-8xl
 }
 
 .linkedin__text{
-    @apply font-light text-gray-800 text-3xl mt-auto transition-all delay-150 scale-100 group-hover:text-4xl ease-in-out
+    @apply font-light text-gray-800 text-3xl xl:text-6xl mt-auto transition-all delay-150 ease-in-out
 }
 
 .gridItem__4{
@@ -103,7 +107,7 @@
 }
 
 .github__container{
-    @apply flex flex-col justify-between flex-wrap h-full p-6
+    @apply flex flex-col justify-between flex-wrap h-full p-6 xl:p-10
 }
 
 .github__icon{
@@ -115,7 +119,7 @@
 }
 
 .github__text{
-    @apply font-light text-white text-3xl mt-auto"
+    @apply font-light text-white text-3xl mt-auto xl:text-6xl
 }
 
 .gridItem__5{
@@ -123,9 +127,9 @@
 }
 
 .spotify__container{
-    @apply flex flex-col justify-between h-full p-6
+    @apply flex flex-col justify-between h-full p-6 xl:p-8
 }
 
 .spotify__text{
-    @apply font-light text-white text-3xl mt-auto
+    @apply font-light text-white text-3xl mt-auto xl:text-6xl
 }

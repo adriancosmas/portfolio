@@ -42,7 +42,7 @@ export default function HomeGrid(){
     var indents = [];
 
     for (var i = 0; i < 33; i++) {
-        indents.push(<div className="w-5 h-5 rounded-md bg-gray-600 hover:bg-green-400 transition-all delay-75 ease-in-out"></div>);
+        indents.push(<div className="w-5 h-5 xl:h-10 xl:w-10 rounded-md bg-gray-600 hover:bg-green-400 transition-all delay-75 ease-in-out"></div>);
     }
 
     const item = width && width < 768 ? indents.splice(2,3) : indents
@@ -100,7 +100,7 @@ export default function HomeGrid(){
         </div>
 
         <div className={ styles.gridContainer }>
-            <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} ${ styles.gridItem }`}>
+            <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} ${ styles.gridItem__2xl }`}>
                 <h1 className={ styles.about__title }>
                     About me
                 </h1>
@@ -186,12 +186,12 @@ latest industry trends and best practices to deliver high-quality, responsive we
                 </div>
             </div>
 
-            <div className={ `transition-opacity duration-1000 lg:col-span-2 ${loading ? 'animate-fade-in-up' : 'opacity-0'} overflow-hidden relative bg-white rounded-3xl cursor-default p-6`} >
-                <div className="flex gap-4 flex-wrap">
+            <div className={ `transition-opacity duration-1000 lg:col-span-2 ${loading ? 'animate-fade-in-up' : 'opacity-0'} overflow-hidden relative bg-white rounded-3xl cursor-default p-6 xl:p-8`} >
+                <div className="flex gap-4 flex-wrap xl:gap-8">
                     {skill.map((o, index) => (
                         <div
                             key={index}
-                            className="bg-slate-100 px-4 py-2 rounded-full lg:text-2xl text-lg"
+                            className="bg-slate-100 px-4 py-2 rounded-full lg:text-2xl text-lg xl:text-6xl xl:px-8 xl:py-4 xl:leading-normal"
                         >
                             { o }
                         </div>
@@ -201,26 +201,26 @@ latest industry trends and best practices to deliver high-quality, responsive we
 
             <div className="grid grid-cols-2 grid-rows-2 gap-8">
                 <Link href="https://behance.net/shibuyameto" target="_blank">
-                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#053eff] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faBehance} />
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#053eff] aspect-square rounded-3xl p-6 hover:scale-125 xl:hover:scale-110 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20 xl:h-44 xl:w-44' icon={faBehance} />
                     </div>
                 </Link>
 
                 <Link href="https://dribbble.com/shibuyameto" target="_blank">
-                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#ea4c89] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faDribbble} />
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#ea4c89] aspect-square rounded-3xl p-6 hover:scale-125 xl:hover:scale-110 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20 xl:h-44 xl:w-44' icon={faDribbble} />
                     </div>
                 </Link>
 
                 <Link href="https://instagram.com/shibuyameto" target="_blank">
-                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#515BD4] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faInstagram} />
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#515BD4] aspect-square rounded-3xl p-6 hover:scale-125 xl:hover:scale-110 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20 xl:h-44 xl:w-44' icon={faInstagram} />
                     </div>
                 </Link>
 
                 <Link href="https://youtube.com/@jansentriad" target="_blank">
-                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#FF0000] aspect-square rounded-3xl p-6 hover:scale-125 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
-                        <FontAwesomeIcon className='w-20 text-white h-20' icon={faYoutube} />
+                    <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} bg-[#FF0000] aspect-square rounded-3xl p-6 hover:scale-125 xl:hover:scale-110 transition-all delay-100 ease-in-out cursor-pointer flex justify-center items-center`}>
+                        <FontAwesomeIcon className='w-20 text-white h-20 xl:h-44 xl:w-44' icon={faYoutube} />
                     </div>
                 </Link>
             </div>
@@ -242,8 +242,8 @@ latest industry trends and best practices to deliver high-quality, responsive we
 
             <div className={`transition-opacity duration-1000 ${loading ? 'animate-fade-in-up' : 'opacity-0'} aspect-square overflow-visible relative rounded-3xl`}>
                 <div className="flex flex-col h-full gap-8">
-                    <div className=" bg-[#1c1917] flex-1 rounded-3xl p-6 transition-all delay-150 hover:rotate-6 cursor-pointer font-mono text-green-400 text-center flex justify-center items-center text-3xl">{`> npm install`}</div>
-                    <Link href="https://www.fiverr.com/s/382XjDm" target="_blank" className=" bg-white flex-1 rounded-3xl p-6 transition-all delay-150 hover:-rotate-6 cursor-pointer text-4xl text-center flex justify-center items-center hover:border-4 hover:border-[#FFDC7F]">Logo/Lettering Commission ↗</Link>
+                    <div className=" bg-[#1c1917] flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:rotate-6 cursor-pointer font-mono text-green-400 text-center flex justify-center items-center text-3xl xl:text-7xl">{`> npm install`}</div>
+                    <Link href="https://www.fiverr.com/s/382XjDm" target="_blank" className=" bg-white flex-1 rounded-3xl p-6 xl:p-8 transition-all delay-150 hover:-rotate-6 cursor-pointer text-4xl xl:text-7xl text-center flex justify-center items-center hover:border-4 hover:border-[#FFDC7F]">Logo/Lettering Commission ↗</Link>
                 </div>
             </div>
         </div>
