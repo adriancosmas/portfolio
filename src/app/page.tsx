@@ -123,7 +123,7 @@ export default async function Index() {
           </div>
       </div>
 
-      <div className="grid grid-flow-row-dense grid-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-8">
+      <div className="grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-8">
           <div className={ styles.blog__content }>
             <div className={ styles.blog__content__header }/>
 

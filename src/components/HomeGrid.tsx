@@ -99,7 +99,7 @@ export default function HomeGrid(){
             </div>
         </div>
 
-        <div className={ styles.gridContainer }>
+        <div className="grid grid-flow-row-dense gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-8">
             <div className={`${loading ? 'animate-fade-in-up' : 'opacity-0'} ${ styles.gridItem__2xl }`}>
                 <h1 className={ styles.about__title }>
                     About me
@@ -124,7 +124,7 @@ latest industry trends and best practices to deliver high-quality, responsive we
             </div>
         </div>
 
-        <div className={ styles.gridContainer__2 }>
+        <div className="grid gird-cols-2 gap-8 sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             <div className={ `${loading ? 'animate-fade-in-up' : 'opacity-0'} ${ styles.calendarContainer }` }>
                 <div className={ styles.calendarContent }>
                     <div className={ styles.calendarHeader }>
